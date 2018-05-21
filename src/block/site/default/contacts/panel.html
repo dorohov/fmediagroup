@@ -1,0 +1,81 @@
+[[azbntple 
+	tpl="/src/block/site/default/header/panel-page.html"
+	block_prefix="header-page__"
+	block_heading="{{block_heading}}"
+	block_heading_level="{{block_heading_level}}"
+	block_bg="{{block_bg}}"
+]]
+<div class="{{content_prefix}}block  {{content_mod}}">
+	<div class="{{content_prefix}}container container content-block__container">
+		<div class="{{content_prefix}}row row  is--wrap  is--gutter  {{content_mod}}">
+			<div class="{{content_prefix}}cols cols  is--address  {{content_mod}}">
+				[[azbntple
+					tpl="/src/block/site/default/page-header/heading.html" 
+					header_prefix="page-header__" 
+					header_mod="is--contacts-index"
+					header_level="h2"
+					header="Звоните!"
+				]]
+				<div class="{{content_prefix}}text text__block">{{block_note}}</div>
+				<div class="{{content_prefix}}item-group">
+					<div class="{{content_prefix}}item">
+						[[azbntple 
+							tpl="/src/block/site/default/contacts/item-icon-link.html" 
+							block_prefix="kontakty-item__"
+							block_mod="is--icon"
+							block_heading="  "
+							block_name="{{contacts.phone}}"
+							block_link="  "
+							block_attr="  "
+							block_icon="contacts-tel"
+						]]			
+					</div>
+					<div class="{{content_prefix}}item">
+						[[azbntple 
+							tpl="/src/block/site/default/contacts/item-icon-link.html" 
+							block_prefix="kontakty-item__"
+							block_mod="is--icon"
+							block_heading="  "
+							block_name="{{contacts.email}}"
+							block_link="  "
+							block_attr="  "
+							block_icon="contacts-email"
+						]]			
+					</div>
+					<div class="{{content_prefix}}item">
+						[[azbntple 
+							tpl="/src/block/site/default/contacts/item-icon.html" 
+							block_prefix="kontakty-item__"
+							block_mod="is--icon"
+							block_heading="  "
+							block_name="{{contacts.address}}"
+							block_link="  "
+							block_attr="  "
+							block_icon="contacts-address"
+						]]			
+					</div>	
+				</div>
+				<div class="{{content_prefix}}wave-group">
+					<div class="{{content_prefix}}wave">
+						<img src="{{url-path-img}}/temp/wave-107.8-199x125.png" alt="">
+					</div>
+					<div class="{{content_prefix}}wave">
+						<img src="{{url-path-img}}/temp/wave-100.9-257x125.png" alt="">
+					</div>
+					<div class="{{content_prefix}}wave">
+						<img src="{{url-path-img}}/temp/wave-101.8-86x125.png" alt="">
+					</div>
+					<div class="{{content_prefix}}wave">
+						<img src="{{url-path-img}}/temp/wave-98.5-118x125.png" alt="">
+					</div>
+					<div class="{{content_prefix}}wave">
+						<img src="{{url-path-img}}/temp/wave-101.4-257x125.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="{{content_prefix}}cols cols  is--map  {{content_mod}}">
+				<div class="{{content_prefix}}map" id="map-google" data-map='{"center" : [52.9713,36.0668],"zoom" : 18,"placemarks" : [{"coord" : [52.971136, 36.066790]}]}' ></div>
+			</div>
+		</div>				
+	</div>
+</div>

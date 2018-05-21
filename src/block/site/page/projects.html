@@ -1,0 +1,55 @@
+[[azbntple 
+	tpl="/src/block/site/default/header/panel-page.html"
+	block_prefix="header-page__"
+	block_heading="{{block_heading}}"
+	block_heading_level="{{block_heading_level}}"
+	block_bg="{{block_bg}}"
+]]
+<main class="{{content_prefix}}panel  {{content_mod}}" role="main">
+	<div class="{{content_prefix}}container container  {{content_mod}}">
+		<div class="{{content_prefix}}elem  {{content_mod}}">
+			<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-category.html"
+						block_prefix="card-item__" 
+						block_mod="is--category"
+						block_link="{{page.specproject}}"
+						block_preview="http://via.placeholder.com/730x480"
+						block_heading="Спецпроекты"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-category.html"
+						block_prefix="card-item__" 
+						block_mod="is--category"
+						block_link="{{page.event}}"
+						block_preview="http://via.placeholder.com/730x480"
+						block_heading="Event-проекты"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-category.html"
+						block_prefix="card-item__" 
+						block_mod="is--category"
+						block_link="{{page.contest}}"
+						block_preview="http://via.placeholder.com/730x480"
+						block_heading="Конкурсы"
+					]]
+				</div>
+				<div class="{{content_prefix}}cols cols  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-category.html"
+						block_prefix="card-item__" 
+						block_mod="is--category"
+						block_link="{{page.programm}}"
+						block_preview="http://via.placeholder.com/730x480"
+						block_heading="Программы производства"
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

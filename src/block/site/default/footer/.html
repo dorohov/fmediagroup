@@ -1,0 +1,33 @@
+<footer class="{{footer_prefix}}block">	
+	<div class="container {{footer_prefix}}container">
+		<div class="row {{footer_prefix}}row  is--base">
+			<div class="cols {{footer_prefix}}cols  is--copyright">
+				<a href="{{page.index}}" class="{{footer_prefix}}copyright">
+					[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]
+				</a>
+			</div>
+			<div class="cols {{footer_prefix}}cols  is--contacts">
+				<div class="{{footer_prefix}}address">
+					<a href="tel:{{contacts.phone_tel}}">{{contacts.phone}}</a>
+				</div>
+			</div>
+			<div class="cols {{footer_prefix}}cols  is--contacts">
+				<div class="{{footer_prefix}}address">
+					{{contacts.address}}					
+				</div>
+			</div>
+			<div class="cols {{footer_prefix}}cols  is--contacts">
+				<div class="{{footer_prefix}}address">
+					<a href="mailto:{{contacts.email}}">{{contacts.email}}</a>
+				</div>
+			</div>
+			<div class="cols {{footer_prefix}}cols  is--soc">
+				[[azbntple 
+					tpl="/src/block/site/default/social/panel.html" 
+					block_prefix="social__" 
+					block_mod="is--footer" 
+				]]
+			</div>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,103 @@
+.header-block__{
+	&block{
+		position: relative;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@media @media-point-screen-lg {
+			background-attachment: fixed;
+		}
+	}
+	&container{
+		position: relative;	
+		height: ~"calc(100vh - @{navbar-device})";
+		
+		min-height: 350px;	
+		@media @media-point-tablet {
+			max-height: 500px;	
+		}	
+		@media @media-point-screen-lg {	
+			height: 100vh;
+			max-height: 960px;			
+		}
+	}
+	&panel{
+		position: relative;
+		padding: 30px 0;
+		//padding-top: 323px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		@media @media-point-screen-lg {	
+			padding-top: 9vw;	
+		}
+	}
+	&inner{
+		
+	}
+	&heading{
+		color: @white;
+		.calcFontSize(26, 34, 320, 767);
+		.calcLineHeight(36, 44, 320, 767);
+		font-weight: 800;
+		margin-bottom: 20px;
+		span{
+		}
+		@media @media-point-notsmart {
+			.calcFontSize(30, 52, 768, 1680);
+			.calcLineHeight(44, 70, 768, 1680);
+			margin-bottom: 4vw;
+			span{
+				display: block;			
+			}
+		}
+	}
+	&heading-small{
+		color: @white;
+		max-width: 450px;
+		line-height: @b-lh - 2;
+	}
+	&btn-group{
+		margin-bottom: 30px;
+		@media @media-point-notsmart {
+			margin-bottom: 3.23vw;
+		}
+	}
+	&btn{
+	}
+}
+.header-page__{
+	&block{
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@media @media-point-screen-lg {
+			background-attachment: fixed;
+		}
+	}
+	&container{
+		height: 50vh;
+		max-height: 960px;
+		position: relative;
+		@media @media-point-tablet {
+			height: 30vh;
+		}	
+		@media @media-point-screen-lg {
+			height: 100vh;
+		}	
+	}
+	&inner{
+		position: absolute;
+		top: 50%;
+		left: 15px;
+		right: 15px;
+		transform: translateY(-50%);
+		text-align: center;
+	}
+	&heading{
+		color: @white;
+
+	}
+}

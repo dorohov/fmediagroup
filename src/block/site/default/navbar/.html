@@ -1,0 +1,121 @@
+<nav class="{{class}} navbar {{navbar_mod}}">
+	<div class="{{navbar_prefix}}header">
+		<div class="container {{navbar_prefix}}container">
+			<div class="row {{navbar_prefix}}row-header ">
+				<div class="cols {{navbar_prefix}}cols-header  is--hamburger">
+					<div class="{{navbar_prefix}}hamburger">
+						<button class="{{navbar_prefix}}hamburger-btn hamburger__item" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+							<span class="hamburger__line  is--left"></span>
+							<span class="hamburger__line  is--center"></span>
+							<span class="hamburger__line  is--right"></span>
+						</button>
+					</div>
+				</div>
+				<!-- <div class="cols {{navbar_prefix}}cols-header">
+					<a href="{{page.projects}}" class="{{navbar_prefix}}nav-icon">
+						[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="navbar-projects" ]]
+					</a>
+				</div>
+				<div class="cols {{navbar_prefix}}cols-header  is--homepage">
+					<a href="{{page.index}}" class="{{navbar_prefix}}nav-icon">
+						[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="navbar-homepage" ]]
+					</a>
+				</div> -->
+				<div class="cols {{navbar_prefix}}cols-header  is--brand">
+					<a class="{{navbar_prefix}}brand" href="{{page.index}}">
+						[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]
+					</a>
+				</div>
+				<!-- <div class="cols {{navbar_prefix}}cols-header">
+					<a href="#" class="{{navbar_prefix}}nav-icon" data-toggle="modal" data-target="#modal-town">
+						[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-address" ]]
+					</a>
+				</div> -->
+				<div class="cols {{navbar_prefix}}cols-header">
+					<a href="tel:{{contacts.phone_tel}}" class="{{navbar_prefix}}nav-icon">
+						[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-tel" ]]
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{navbar_prefix}}collapse" >
+		<div class="container {{navbar_prefix}}container  is--collapse">
+			<div class="{{navbar_prefix}}collapse-inner">	
+				<div class="row {{navbar_prefix}}collapse-row">
+					<div class="cols {{navbar_prefix}}collapse-cols cols  is--brand">
+						<a class="{{navbar_prefix}}brand" href="{{page.index}}">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]
+						</a> 
+					</div>
+					<div class="cols {{navbar_prefix}}collapse-cols cols  is--nav">
+						<div class="row {{navbar_prefix}}collapse-row  is--inner">
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--inner-nav">
+								<ul class="{{navbar_prefix}}nav">
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Главная" 
+										navbar_link="{{page.index}}"
+										navbar_mod="  " 
+									]]
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Компания" 
+										navbar_link="{{page.about}}"
+										navbar_mod="  " 
+									]] 
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Проекты" 
+										navbar_link="{{page.projects}}"
+										navbar_mod="  " 
+									]]
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Пресса" 
+										navbar_link="{{page.articles}}"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Команда" 
+										navbar_link="{{page.team}}"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Отзывы"
+										navbar_link="{{page.reviews}}"
+										navbar_mod="  " 
+									]]	
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Контакты"
+										navbar_link="{{page.contacts}}"
+										navbar_mod="  " 
+									]]
+									[[azbntple 
+										tpl="/src/block/site/default/navbar/item-town.html" 
+										navbar_prefix="navbar__" 
+										navbar_name="Орёл"
+										navbar_mod="  " 
+									]]
+								</ul>
+							</div>
+							<div class="cols {{navbar_prefix}}collapse-cols cols  is--inner-tel">			
+								<a href="tel:{{contacts.phone_tel}}" class="{{navbar_prefix}}tel">{{contacts.phone}}</a>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+</nav>

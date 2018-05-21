@@ -1,0 +1,54 @@
+.dropdown__{
+	&panel{}
+	&label{
+		margin-bottom: 5px;
+	}
+	&link{
+		display: block;
+		position: relative;
+		border-radius: 10px;
+		padding: 15px 60px 15px 20px;
+		border: 1px solid @white-d9;
+		color: @black-80;
+		&:hover,
+		.dropdown__panel.open &{
+			color: @b-color;
+			border-color: @b-color;
+		}
+	}
+	&caret{
+		position: absolute;
+		top: 50%;
+		right: 25px;
+		transform: translateY(-50%);
+		width: 18px;
+		height: 18px;
+		svg{display: block;}
+		.dropdown__panel.open &{
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+	&menu{
+		left: 0;
+		width: 100%;
+		margin-top: 5px;
+		border: 1px solid @black-80;
+		border-radius: 10px;
+		padding: 10px 0;
+	}
+	&menu{}
+	&menu-item{}
+	&menu-link{
+		display: block;
+		padding: 5px 20px;
+		color: @black-80;
+		.dropdown__menu-item.is--active &,
+		&:hover{
+			background-color: @b-color-a;
+			color: @white;
+		}
+		.dropdown__menu-item.is--active &{
+			cursor: default;
+		}
+	}
+}
