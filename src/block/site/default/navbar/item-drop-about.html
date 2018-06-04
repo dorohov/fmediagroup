@@ -1,0 +1,47 @@
+<li class="{{navbar_prefix}}nav-item dropdown  {{navbar_mod}}">
+	<a href="#" class="dropdown-toggle {{navbar_prefix}}nav-link" data-toggle="dropdown">
+		<div class="{{navbar_prefix}}nav-caret">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="navbar-dropdown" ]]
+		</div>
+		{{navbar_name}}
+	</a>
+	<div class="{{navbar_prefix}}nav-dropdown dropdown-menu">			
+		<ul class="{{navbar_prefix}}nav-dropdown-menu">					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="ГК F-media" 
+				navbar_link="{{page.about}}"
+			]]					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Люди" 
+				navbar_link="{{page.team}}"
+			]]					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Пресс-центр" 
+				navbar_link="{{page.articles}}"
+			]]					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Награды" 
+				navbar_link="{{page.awords}}"
+			]]				
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Отзывы" 
+				navbar_link="{{page.reviews}}"
+			]]
+		</ul>
+	</div>
+</li>

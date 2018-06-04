@@ -36,7 +36,7 @@ $(function() {
 		slidesToScroll: 1,
 		arrows: true,
 		dots: false,
-		infinite: false,
+		infinite: true,
 		autoplay: true,
   		autoplaySpeed: 2500,
 		prevArrow: prevArrow,

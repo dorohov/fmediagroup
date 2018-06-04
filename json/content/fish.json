@@ -21,6 +21,7 @@
 	"page":{
 		"index":"/",
 		"about":"/about.html",
+		"awords":"/awords.html",
 		"projects":"/projects.html",
 		"articles":"/articles.html",
 		"team":"/team.html",

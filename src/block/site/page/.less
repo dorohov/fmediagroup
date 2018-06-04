@@ -283,7 +283,7 @@
 				.makeCols(6, 12);
 			}
 			@media @media-point-notsmart {
-				.makeCols(4, 12);
+				.makeCols(3, 12);
 			}
 		}
 	}
@@ -319,6 +319,9 @@
 			text-transform: none;
 			font-weight: 700;
 		}
+		&.is--event-card{
+			color: @b-color-a;
+		}
 	}
 	&text{
 		&.is--center{
@@ -329,6 +332,9 @@
 			max-width: 690px;
 			margin: 0 auto;
 			padding-top: 30px;
+			@media @media-point-screen {
+				padding-top: 3.8vw;
+			}
 		}
 		&.is--about-index{
 			color: @white;

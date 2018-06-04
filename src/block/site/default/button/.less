@@ -69,6 +69,16 @@
 				//border-color: @btn_i_hover_border_color;
 			}
 		}
+		&.is--hover-white{
+			background-color: @btn_bg_color;
+			color: @btn_color;
+			.card-item__card:hover &,
+			.card-item__card.is--active &,
+			&:hover{			
+				color: @btn_bg_color;
+				background-color: @white;
+			}
+		}
 		&.is--white{		
 			color: @btn_w_color;
 			background-color: @btn_w_bg_color;
@@ -104,6 +114,14 @@
 			transform: translateY(-50%);
 			@media @media-point-screen {
 				right: 1vw;
+			}			
+			.btn__item.is--hover-white &{
+				color: @btn_color;
+				.card-item__card:hover &,
+				.card-item__card.is--active &,
+				&:hover{			
+					color: @btn_bg_color;
+				}
 			}
 		}
 		svg{display: block;}
@@ -121,6 +139,35 @@
 	}
 	&indicators-item{
 		.mix-indicators-item();
+	}
+	&goto-top{
+		display: none;
+		@media @media-point-notsmart {
+			display: block;
+		}
+		.btn-clearfix();
+		width: 42px;
+		height: 42px;
+		padding: 5px;
+		position: fixed;
+		z-index: 999;
+		bottom: 0;
+		left: 10px;
+		opacity: 0;
+		background-color: @b-color-a;
+		color: @white;
+		transition: @trs-site;
+		&.active{
+			opacity: 1;
+			bottom: 5%;
+			@media @media-point-tablet {
+				bottom: 17%;
+			}
+		}
+		&:hover{
+			color: @white;
+			background-color: @b-color;
+		}
 	}
 }
 /*

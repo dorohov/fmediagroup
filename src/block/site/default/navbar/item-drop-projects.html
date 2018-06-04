@@ -1,0 +1,40 @@
+<li class="{{navbar_prefix}}nav-item dropdown  {{navbar_mod}}">
+	<a href="#" class="dropdown-toggle {{navbar_prefix}}nav-link" data-toggle="dropdown">
+		<div class="{{navbar_prefix}}nav-caret">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="navbar-dropdown" ]]
+		</div>
+		{{navbar_name}}
+	</a>
+	<div class="{{navbar_prefix}}nav-dropdown dropdown-menu">			
+		<ul class="{{navbar_prefix}}nav-dropdown-menu">					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Программы" 
+				navbar_link="{{page.programm}}"
+			]]					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Спецпроекты" 
+				navbar_link="{{page.specproject}}"
+			]]					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Конкурсы" 
+				navbar_link="{{page.contest}}"
+			]]					
+			[[azbntple 
+				tpl="/src/block/site/default/navbar/item-drop-link.html" 
+				navbar_prefix="navbar__" 
+				navbar_mod="  "
+				navbar_name="Event-проекты" 
+				navbar_link="{{page.event}}"
+			]]
+		</ul>
+	</div>
+</li>
