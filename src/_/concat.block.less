@@ -577,7 +577,7 @@
 	&icon{
 		.btn-clearfix();
 		display: inline-block; 
-		transition: @trs-btn;
+		//transition: @trs-btn;
 		width: 16px;
 		height: 16px;
 		&.is--more{
@@ -632,7 +632,7 @@
 		transition: @trs-site;
 		&.active{
 			opacity: 1;
-			bottom: 5%;
+			bottom: 15%;
 			@media @media-point-tablet {
 				bottom: 17%;
 			}
@@ -894,7 +894,14 @@
 			}
 		}
 		&.is--radio-slider{
-			img{margin: 0 auto;}
+			img{
+				margin: 0 auto; 
+			}
+			&.is--partners{
+				img{
+					max-width: 200px; 
+				}
+			}
 		}
 	}
 	&play{
